@@ -83,7 +83,10 @@ input {
     right: 0;
     padding: 0 10px;
     color: var(--card-tag-background)
-    
+}
+
+#search_ic:hover {
+    cursor: pointer;
 }
 
 .search-container {

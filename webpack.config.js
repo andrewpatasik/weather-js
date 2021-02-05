@@ -8,7 +8,7 @@ module.exports = {
     entry: "./src/script.js",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist",
+        path: path.resolve(__dirname, 'dist'),
         assetModuleFilename: "images/[name][ext][query]",
     },
     module: {
@@ -21,7 +21,8 @@ module.exports = {
                     options: {
                         presets: [
                             ['@babel/preset-env', { targets: "defaults" }]
-                        ]
+                        ],
+                        plugins: ['@babel/plugin-transform-runtime']
                     }
                 }
             },

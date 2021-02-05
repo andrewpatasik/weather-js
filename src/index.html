@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/66c5b2aca7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/vectorpaint.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/vectorpaint.svg" />
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     <title>Weather Forecast</title>
 </head>
 
 <body>
     <div class="navbar">
         <div class="container flex">
-            <h2 id="time">Friday, February 2 2021 | 12.00 PM</h2>
+            <h2 id="time"></h2>
             <div class="container search-container">
                 <form>
                     <input id="searchbox" type="text" placeholder="search city">
@@ -27,18 +31,18 @@
         <div class="container">
             <div class="main-display grid grid-2-row">
                 <div class="info-location">
-                    <h2 id="condition">Sunny</h2>
-                    <h1 id="location">Jakarta</h1>
+                    <h2 id="condition"></h2>
+                    <h1 id="location"></h1>
                 </div>
                 <div class="info-detail grid grid-2-col">
                     <div class="weather-degree flex">
-                        <h1 id="deg">30</h1>
-                        <h2 id="temp">&deg C</h2>
+                        <h1 id="deg"></h1>
+                        <h2 id="temp"></h2>
                     </div>
                     <div class="weather-detail">
-                        <p>Feels Like:</p>
-                        <p>Humidity:</p>
-                        <p>Wind:</p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -54,7 +58,7 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
