@@ -31,7 +31,17 @@ html {
     height: 100%;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
 h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
     font-size: 20px;
     font-weight: 400;
 }
@@ -79,7 +89,74 @@ input {
 .search-container {
     background-color: var(--card-background);
 }
+
+/* main */
+
+.main {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.main .container {
+    margin-left: 100px;
+    width: 90%;
+}
+
+.main-display {
+    width: 100%;
+    margin: 0;
+}
+
+.info-location {
+    padding: 10px;
+}
+
+.info-detail {
+    padding: 10px;
+}
+
+.weather-degree {
+
+}
+
+.weather-detail > p{
+    margin-bottom: 0.5em;
+}
+
+#temp {
+    
+}
+
+
+/* footer */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: -90px;
+}
+
+.footer .container {
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-content > p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.footer-content > i {
+    font-size: 50px;
+    color: var(--card-highlight);
+}
+
 /* Utilities */
+
+.block {
+    border: 1px solid #fffffe;
+}
 .container {
     padding: 0;
     margin: 0;
@@ -88,4 +165,17 @@ input {
 
 .flex {
     display: flex;
+}
+
+.grid {
+    display: grid
+}
+
+.grid-2-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-row {
+    grid-template-columns: 400px;
+    grid-template-rows: 1fr;
 }
