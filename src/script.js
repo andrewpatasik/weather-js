@@ -1,11 +1,10 @@
-import {
-    compareAsc,
-    format
-} from 'date-fns'
+import { compareAsc, format } from 'date-fns';
 
 // import assets
 import './style.css'
 import './images/vectorpaint.svg'
+
+const API_KEY = process.env.API_KEY;
 
 const time = document.getElementById('time');
 const condition = document.getElementById('condition');
@@ -17,7 +16,8 @@ const form = document.querySelector('form');
 const searchbox = document.getElementById('searchbox');
 const searchBtn = document.getElementById('search_ic');
 
-const API_KEY = '8ec7ca981eb82bda8fcf4eb5ac6053de';
+// const API_KEY = process.env.API_KEY;
+// console.log(API_KEY)
 
 class weatherObj {
     constructor(key, city) {
@@ -147,7 +147,13 @@ searchBtn.addEventListener('click', () => {
 })
 
 setTimeAndDate();
+setInterval(() => setTimeAndDate(), 60 * 1000);
 
+window.addEventListener('beforeunload', function (e) {
+    clearInterval(setTimeAndDate());
+});
+
+// window.process.env.API_KEY = process.env.API_KEY;
 // window.addEventListener('load', () => {
 
 // })
